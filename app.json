@@ -1,28 +1,16 @@
 {
-  "expo": {
-    "name": "Test1",
-    "slug": "Test1",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+   "expo": {
+    "name": "Cocktail",
+    "icon": "logo.png",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "slug": "marcom-cocktails",
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.marcom.cocktails",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.marcom.cocktails",
+      "versionCode": 1
     }
-  }
-}
+   }
+ }

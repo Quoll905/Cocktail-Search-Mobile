@@ -1,19 +1,40 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput, FlatList } from 'react-native';
+import SchermataAvvio from './SchermataAvvio.js';
+import SchermataPrincipale from './SchermataPrincipale.js'
+
+
 
 export default function App() {
+
+  const [variabile, onChangeVariabile] = React.useState(false);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+
+    variabile ? <SchermataAvvio /> : <SchermataPrincipale />
+
+
   );
 }
 
+
+
+
+
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  lista:{
+    backgroundColor: 'black',
+    display: 'none',
+    flex: 1
   },
+  lista1:{
+    backgroundColor: 'black',
+    display: 'flex',
+    flex: 10
+  }
+
+
+
+
 });
